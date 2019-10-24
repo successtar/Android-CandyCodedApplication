@@ -76,11 +76,11 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        createShareIntenet();
+        createShareIntent();
         return super.onOptionsItemSelected(item);
     }
 
-    private void createShareIntenet(){
+    private void createShareIntent(){
        Intent shareIntent = new Intent(Intent.ACTION_SEND);
        shareIntent.setType("text/plain");
 
